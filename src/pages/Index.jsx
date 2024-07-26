@@ -20,7 +20,7 @@ const Index = () => {
           Stockholm, the capital of Sweden, is a city of stunning beauty, rich history, and modern innovation. 
           Spread across 14 islands, it offers a unique blend of urban life and natural landscapes.
         </p>
-        <Button>Plan Your Trip</Button>
+        <Button variant="default" className="bg-blue-500 hover:bg-blue-600">Plan Your Trip</Button>
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
