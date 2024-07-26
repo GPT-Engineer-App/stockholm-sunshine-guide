@@ -53,6 +53,7 @@ const Index = () => {
             image="/placeholder.svg"
             title="Vasa Museum"
             description="Home to a 17th-century warship"
+            link="/vasa-museum"
           />
           <AttractionCard
             image="/placeholder.svg"
@@ -121,7 +122,7 @@ const FeatureCard = ({ icon, title, description }) => (
   </Card>
 );
 
-const AttractionCard = ({ image, title, description }) => (
+const AttractionCard = ({ image, title, description, link }) => (
   <Card>
     <img src={image} alt={title} className="mx-auto object-cover w-full h-[200px]" />
     <CardHeader>
@@ -129,6 +130,11 @@ const AttractionCard = ({ image, title, description }) => (
     </CardHeader>
     <CardContent>
       <p>{description}</p>
+      {link && (
+        <Button variant="link" className="mt-2 p-0" onClick={() => window.location.href = link}>
+          Learn More
+        </Button>
+      )}
     </CardContent>
   </Card>
 );
