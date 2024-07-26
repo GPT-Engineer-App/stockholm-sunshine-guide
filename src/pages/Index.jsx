@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Landmark, Utensils, Calendar } from "lucide-react";
+import { MapPin, Landmark, Utensils, Calendar, Train, BedDouble } from "lucide-react";
 
 const Index = () => {
   return (
@@ -46,7 +46,7 @@ const Index = () => {
         />
       </section>
 
-      <section>
+      <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Top Attractions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <AttractionCard
@@ -64,6 +64,43 @@ const Index = () => {
             title="Royal Palace"
             description="Official residence of the Swedish monarch"
           />
+          <AttractionCard
+            image="/placeholder.svg"
+            title="Skansen"
+            description="World's oldest open-air museum"
+          />
+          <AttractionCard
+            image="/placeholder.svg"
+            title="ABBA The Museum"
+            description="Interactive exhibit dedicated to the iconic Swedish pop group"
+          />
+          <AttractionCard
+            image="/placeholder.svg"
+            title="Fotografiska"
+            description="Contemporary photography museum with stunning views"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Plan Your Visit</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>Getting Around</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Stockholm has an excellent public transportation system, including buses, trains, and ferries. Consider purchasing a Stockholm Pass for unlimited travel and free entry to many attractions.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Where to Stay</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>From luxury hotels to cozy hostels, Stockholm offers accommodations for every budget. Popular areas include Norrmalm, Östermalm, and Södermalm.</p>
+            </CardContent>
+          </Card>
         </div>
       </section>
     </div>
