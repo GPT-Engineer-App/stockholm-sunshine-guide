@@ -6,7 +6,7 @@ const VasaMuseum = () => {
     <div className="container mx-auto px-4 py-8">
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Vasa Museum</h1>
-        <p className="text-xl text-muted-foreground">Home to a 17th-century warship</p>
+        <p className="text-xl text-muted-foreground">Home to a beautiful 17th-century warship</p>
       </header>
 
       <section className="mb-12">
