@@ -82,8 +82,8 @@ const Index = () => {
           />
           <AttractionCard
             image="/placeholder.svg"
-            title="Naturhistoriska"
-            description="Swedish Museum of Natural History with fascinating exhibits"
+            title="Gröna Lund"
+            description="Stockholm's historic amusement park with thrilling rides"
           />
         </div>
       </section>
